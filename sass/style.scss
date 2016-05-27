@@ -1,0 +1,164 @@
+/*
+	Theme Name: Street Jam
+	Description: This is custom wordpress theme created for Street Jam using Genesis Framework.
+	Author: Mauricio Alvarez
+	Author URI: http://designnify.com/
+	Version: 1.0.
+
+	Tags: black, orange, white, one-column, two-columns, three-columns, fixed-width, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
+
+	Template: genesis
+	Template Version: 2.0.1
+
+	License: GPL-2.0+
+	License URI: http://www.opensource.org/licenses/gpl-license.php
+*/
+
+
+/* Table of Contents
+
+	- HTML5 Reset
+		- Baseline Normalize
+		- Box Sizing
+		- Float Clearing
+	- Defaults
+		- Typographical Elements
+		- Headings
+		- Objects
+		- Forms
+		- Tables
+	- Structure and Layout
+		- Site Containers
+		- Column Widths and Positions
+		- Column Classes
+	- Common Classes
+		- WordPress
+		- Genesis
+		- Titles
+	- Widgets
+		- Featured Content
+	- Home Widgets
+		- Home Widgets
+		- Video
+	- Plugins
+		- Genesis eNews Extended
+		- Genesis Latest Tweets
+		- Gravity Forms
+		- Jetpack
+	- Site Header
+		- Title Area
+		- Widget Area
+	- Site Navigation
+		- Header Navigation
+		- Primary Navigation
+		- Secondary Navigation
+		- Primary Navigation & Secondary Navigation share css
+	- Content Area
+		- Entries
+		- Pagination
+		- Comments
+	- Sidebars
+	- Footer Widgets
+	- Site Footer
+	- Media Queries
+		- max-width: 1139px
+		- max-width: 1023px
+		- max-width: 767px
+
+*/
+
+@import "partials/variables";
+@import "partials/mixins";
+
+/*
+HTML5 Reset
+---------------------------------------------------------------------------------------------------- */
+@import "partials/reset";
+
+
+/*
+Defaults
+---------------------------------------------------------------------------------------------------- */
+@import "partials/defaults";
+
+
+/*
+Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+@import "partials/structure-layout";
+
+
+/*
+Common Classes
+---------------------------------------------------------------------------------------------------- */
+@import "partials/common-classes";
+
+
+/*
+Widgets
+---------------------------------------------------------------------------------------------------- */
+@import "partials/widgets";
+
+
+/*
+Home Widgets
+---------------------------------------------------------------------------------------------------- */
+@import "partials/home-widgets";
+@import "partials/video";
+
+
+/*
+Plugins
+---------------------------------------------------------------------------------------------------- */
+@import "partials/plugins";
+
+
+/* Gravity Forms
+--------------------------------------------- */
+@import "partials/gravity-forms";
+
+
+/* Jetpack
+--------------------------------------------- */
+@import "partials/jetpack";
+
+
+/*
+Site Header
+---------------------------------------------------------------------------------------------------- */
+@import "partials/site-header";
+
+
+/*
+Site Navigation
+---------------------------------------------------------------------------------------------------- */
+@import "partials/site-navigation";
+
+
+/*
+Content Area
+---------------------------------------------------------------------------------------------------- */
+@import "partials/content-area";
+
+
+/*
+Sidebars
+---------------------------------------------------------------------------------------------------- */
+@import "partials/sidebars";
+
+/*
+Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+@import "partials/footer-widgets";
+
+
+/*
+Site Footer
+---------------------------------------------------------------------------------------------------- */
+@import "partials/site-footer";
+
+
+/*
+Media Queries
+---------------------------------------------------------------------------------------------------- */
+@import "partials/media-queries";

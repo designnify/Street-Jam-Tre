@@ -35,6 +35,8 @@
 		- Titles
 	- Widgets
 		- Featured Content
+	- Pages
+		- Contact
 	- Home Widgets
 		- Home Widgets
 		- Video
@@ -508,14 +510,13 @@ input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover {
-  background-color: #fff;
-  color: #1E7E00; }
+  background-color: #000; }
 
-/* line 227, sass/partials/_defaults.scss */
+/* line 226, sass/partials/_defaults.scss */
 .entry-content .button:hover {
   color: #fff; }
 
-/* line 232, sass/partials/_defaults.scss */
+/* line 231, sass/partials/_defaults.scss */
 .footer-widgets button:hover,
 .footer-widgets input:hover[type="button"],
 .footer-widgets input:hover[type="reset"],
@@ -524,18 +525,18 @@ input:hover[type="submit"],
   background-color: #fff;
   color: #000; }
 
-/* line 242, sass/partials/_defaults.scss */
+/* line 241, sass/partials/_defaults.scss */
 .button {
   display: inline-block; }
 
-/* line 246, sass/partials/_defaults.scss */
+/* line 245, sass/partials/_defaults.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button {
   display: none; }
 
 /* Tables
 --------------------------------------------- */
-/* line 254, sass/partials/_defaults.scss */
+/* line 253, sass/partials/_defaults.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -543,21 +544,21 @@ table {
   margin-bottom: 40px;
   width: 100%; }
 
-/* line 262, sass/partials/_defaults.scss */
+/* line 261, sass/partials/_defaults.scss */
 tbody {
   border-bottom: 1px solid #ddd; }
 
-/* line 266, sass/partials/_defaults.scss */
+/* line 265, sass/partials/_defaults.scss */
 td,
 th {
   text-align: left; }
 
-/* line 271, sass/partials/_defaults.scss */
+/* line 270, sass/partials/_defaults.scss */
 td {
   border-top: 1px solid #ddd;
   padding: 6px 0; }
 
-/* line 276, sass/partials/_defaults.scss */
+/* line 275, sass/partials/_defaults.scss */
 th {
   font-weight: 400; }
 
@@ -880,6 +881,18 @@ Widgets
 /* line 40, sass/partials/_widgets.scss */
 .featured-content .entry-title {
   font-size: 20px; }
+
+/*
+Pagess
+---------------------------------------------------------------------------------------------------- */
+/* Contact
+--------------------------------------------- */
+/* line 5, sass/partials/_pages.scss */
+.wpcf7 .wpcf7-form p {
+  margin: 0 0 12px; }
+/* line 9, sass/partials/_pages.scss */
+.wpcf7 .wpcf7-form input {
+  padding: 10px; }
 
 /*
 Home Widgets

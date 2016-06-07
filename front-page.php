@@ -54,6 +54,24 @@ function street_jam_body_class( $classes ) {
 	
 }
 
+//* Enqueue Backstretch script and prepare images for loading
+add_action( 'wp_enqueue_scripts', 'street_jam_enqueue_backstretch_scripts' );
+function street_jam_enqueue_backstretch_scripts() {
+
+	$image = get_option( 'street-jam-backstretch-image', sprintf( '%s/images/default-bg.jpg', get_stylesheet_directory_uri() ) );
+
+	//* Load scripts only if custom backstretch image is being used
+	if ( ! empty( $image ) ) {
+
+		wp_enqueue_script( 'street-jam-backstretch', get_bloginfo( 'stylesheet_directory' ) . '/js/min/backstretch-min.js', array( 'jquery' ), '1.0.0' );
+		wp_enqueue_script( 'street-jam-backstretch-set', get_bloginfo( 'stylesheet_directory' ).'/js/min/backstretch-set-min.js' , array( 'jquery', 'street-jam-backstretch' ), '1.0.0' );
+
+		wp_localize_script( 'street-jam-backstretch-set', 'BackStretchImg', array( 'src' => str_replace( 'http:', '', $image ) ) );
+
+	}
+
+}
+
 function street_jam_homepage_widgets() {
 	
 	genesis_widget_area( 'home-top', array(

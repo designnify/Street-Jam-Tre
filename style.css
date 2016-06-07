@@ -1862,7 +1862,7 @@ Media Queries
 
   /* line 211, sass/partials/_media-queries.scss */
   .header-image .site-title > a {
-    background: url(images/logo-mobile.svg) no-repeat left;
+    background: url(images/mobile-logo.svg) no-repeat left;
     height: 60px; }
 
   /* line 216, sass/partials/_media-queries.scss */

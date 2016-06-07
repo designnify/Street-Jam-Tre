@@ -2,6 +2,9 @@
 //* Start the engine
 include_once( get_template_directory() . '/lib/init.php' );
 
+//* Add Settings to WordPress Theme Customizer
+require_once( get_stylesheet_directory() . '/lib/customize.php' );
+
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'Street-Jam' );
 define( 'CHILD_THEME_URL', 'http://designnify.com/' );
@@ -24,6 +27,13 @@ function genesis_sample_scripts() {
 	
 	//* Add Dashicons
 	wp_enqueue_style( 'dashicons' );
+	
+	//* Add Backstretch Script
+	if ( is_singular( array( 'post', 'page' ) ) && has_post_thumbnail() ) {
+
+		wp_enqueue_script( 'street-jam-backstretch', get_bloginfo( 'stylesheet_directory' ) . '/js/min/backstretch-min.js', array( 'jquery' ), '1.0.0', true );
+		wp_enqueue_script( 'street-jam-backstretch-set', get_bloginfo( 'stylesheet_directory' ) . '/js/min/backstretch-init.js' , array( 'jquery', 'dbdc-backstretch' ), '1.0.0', true );
+	}
 
 }
 

@@ -137,6 +137,12 @@
 
 .nav-secondary {
 	float: right;
+	
+	.current-menu-item > a,
+	.sub-menu .current-menu-item > a:hover {
+		color: #fff;
+		text-decoration: underline;
+	}
 }
 
 /* Primary Navigation & Secondary Navigation share css

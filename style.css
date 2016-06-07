@@ -1387,21 +1387,26 @@ Site Navigation
 /* line 138, sass/partials/_site-navigation.scss */
 .nav-secondary {
   float: right; }
+  /* line 141, sass/partials/_site-navigation.scss */
+  .nav-secondary .current-menu-item > a,
+  .nav-secondary .sub-menu .current-menu-item > a:hover {
+    color: #fff;
+    text-decoration: underline; }
 
 /* Primary Navigation & Secondary Navigation share css
 --------------------------------------------- */
-/* line 145, sass/partials/_site-navigation.scss */
+/* line 151, sass/partials/_site-navigation.scss */
 .nav-primary,
 .nav-secondary {
   background-color: transparent;
   min-height: 90px;
   margin-top: -65px;
   width: 39%; }
-  /* line 152, sass/partials/_site-navigation.scss */
+  /* line 158, sass/partials/_site-navigation.scss */
   .nav-primary a,
   .nav-secondary a {
     color: #fff; }
-  /* line 156, sass/partials/_site-navigation.scss */
+  /* line 162, sass/partials/_site-navigation.scss */
   .nav-primary a:hover,
   .nav-secondary a:hover {
     color: #fff;

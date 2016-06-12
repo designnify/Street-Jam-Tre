@@ -889,30 +889,32 @@ Pagess
 ---------------------------------------------------------------------------------------------------- */
 /* Schedule
 --------------------------------------------- */
-/* line 4, sass/partials/_pages.scss */
+/* line 5, sass/partials/_pages.scss */
 .responsive-table-shortcode-wrap th,
 .responsive-table-shortcode-wrap tr td:first-child {
   background: #941206; }
-/* line 9, sass/partials/_pages.scss */
+/* line 10, sass/partials/_pages.scss */
 .responsive-table-shortcode-wrap tr td:first-child {
   color: #fff;
   width: 30%; }
-/* line 14, sass/partials/_pages.scss */
+/* line 15, sass/partials/_pages.scss */
 .responsive-table-shortcode-wrap tr:nth-of-type(odd) {
   background: #fff; }
-/* line 18, sass/partials/_pages.scss */
+/* line 19, sass/partials/_pages.scss */
 .responsive-table-shortcode-wrap td, .responsive-table-shortcode-wrap th {
   padding: 0 0 0 10px; }
-/* line 22, sass/partials/_pages.scss */
+/* line 23, sass/partials/_pages.scss */
 .responsive-table-shortcode-wrap th {
   border: none; }
 
+/* News
+--------------------------------------------- */
 /* Contact
 --------------------------------------------- */
-/* line 31, sass/partials/_pages.scss */
+/* line 38, sass/partials/_pages.scss */
 .wpcf7 .wpcf7-form p {
   margin: 0 0 12px; }
-/* line 35, sass/partials/_pages.scss */
+/* line 42, sass/partials/_pages.scss */
 .wpcf7 .wpcf7-form input {
   padding: 10px; }
 
@@ -1927,8 +1929,12 @@ Media Queries
   .sidebar .widget.enews-widget {
     padding: 40px; }
 
+  /* line 209, sass/partials/_media-queries.scss */
+  .sidebar .widget-wrap {
+    padding: 5%; }
+
   /* Site Header */
-  /* line 210, sass/partials/_media-queries.scss */
+  /* line 214, sass/partials/_media-queries.scss */
   .site-header,
   .site-header .wrap,
   .title-area,
@@ -1936,17 +1942,17 @@ Media Queries
   .header-image .site-title > a {
     min-height: 60px; }
 
-  /* line 218, sass/partials/_media-queries.scss */
+  /* line 222, sass/partials/_media-queries.scss */
   .header-image .site-title > a {
     background: url(images/mobile-logo.svg) no-repeat left;
     height: 60px; }
 
-  /* line 223, sass/partials/_media-queries.scss */
+  /* line 227, sass/partials/_media-queries.scss */
   .site-header,
   .navigation-container {
     background-color: #941206; }
 
-  /* line 228, sass/partials/_media-queries.scss */
+  /* line 232, sass/partials/_media-queries.scss */
   .title-area,
   .site-title {
     height: 60px;
@@ -1954,49 +1960,49 @@ Media Queries
     position: static;
     width: 120px; }
 
-  /* line 236, sass/partials/_media-queries.scss */
+  /* line 240, sass/partials/_media-queries.scss */
   .site-header .wrap {
     padding: 0 5%; }
 
-  /* line 240, sass/partials/_media-queries.scss */
+  /* line 244, sass/partials/_media-queries.scss */
   .title-area {
     padding: 0; }
 
-  /* line 244, sass/partials/_media-queries.scss */
+  /* line 248, sass/partials/_media-queries.scss */
   .genesis-nav-menu {
     font-size: 18px;
     font-weight: 300; }
-    /* line 248, sass/partials/_media-queries.scss */
+    /* line 252, sass/partials/_media-queries.scss */
     .genesis-nav-menu a {
       padding: 10px 13px; }
 
   /* Responsive Navigation */
-  /* line 255, sass/partials/_media-queries.scss */
+  /* line 259, sass/partials/_media-queries.scss */
   .navigation-container {
     background-color: #941206;
     height: 0;
     top: 0; }
 
-  /* line 261, sass/partials/_media-queries.scss */
+  /* line 265, sass/partials/_media-queries.scss */
   .nav-primary {
     margin-top: 0;
     min-height: 60px;
     width: 100%; }
-    /* line 266, sass/partials/_media-queries.scss */
+    /* line 270, sass/partials/_media-queries.scss */
     .nav-primary .wrap {
       padding: 0; }
 
-  /* line 271, sass/partials/_media-queries.scss */
+  /* line 275, sass/partials/_media-queries.scss */
   .responsive-menu-icon,
   .responsive-menu .menu-item-has-children {
     cursor: pointer; }
 
-  /* line 276, sass/partials/_media-queries.scss */
+  /* line 280, sass/partials/_media-queries.scss */
   .responsive-menu .menu-item {
     display: block;
     text-align: center; }
 
-  /* line 281, sass/partials/_media-queries.scss */
+  /* line 285, sass/partials/_media-queries.scss */
   .responsive-menu-icon {
     display: block;
     float: right;
@@ -2005,12 +2011,12 @@ Media Queries
     text-align: right;
     top: -50px; }
 
-  /* line 290, sass/partials/_media-queries.scss */
+  /* line 294, sass/partials/_media-queries.scss */
   .responsive-menu,
   .responsive-menu > .menu-item > .sub-menu {
     display: none; }
 
-  /* line 295, sass/partials/_media-queries.scss */
+  /* line 299, sass/partials/_media-queries.scss */
   .responsive-menu-icon::before {
     color: #fff;
     content: "\f333";
@@ -2019,7 +2025,7 @@ Media Queries
     margin: 0 auto;
     padding: 10px; }
 
-  /* line 304, sass/partials/_media-queries.scss */
+  /* line 308, sass/partials/_media-queries.scss */
   .responsive-menu > .menu-item-has-children:before {
     clear: both;
     content: "\f347";
@@ -2031,100 +2037,100 @@ Media Queries
     text-align: right;
     z-index: 9999; }
 
-  /* line 316, sass/partials/_media-queries.scss */
+  /* line 320, sass/partials/_media-queries.scss */
   .responsive-menu .menu-open.menu-item-has-children:before {
     content: "\f343"; }
 
-  /* line 320, sass/partials/_media-queries.scss */
+  /* line 324, sass/partials/_media-queries.scss */
   .responsive-menu .sub-menu .sub-menu {
     margin: 0 0 0 25px; }
 
-  /* line 324, sass/partials/_media-queries.scss */
+  /* line 328, sass/partials/_media-queries.scss */
   #menu-left-nav {
     background: #941206;
     position: relative;
     top: -40px; }
 
   /* Home-top */
-  /* line 332, sass/partials/_media-queries.scss */
+  /* line 336, sass/partials/_media-queries.scss */
   #home-top,
   .video-intro {
     position: relative; }
-    /* line 336, sass/partials/_media-queries.scss */
+    /* line 340, sass/partials/_media-queries.scss */
     #home-top h1,
     #home-top h2,
     .video-intro h1,
     .video-intro h2 {
       top: 60%; }
 
-  /* line 342, sass/partials/_media-queries.scss */
+  /* line 346, sass/partials/_media-queries.scss */
   #home-top {
     max-height: 450px; }
-    /* line 345, sass/partials/_media-queries.scss */
+    /* line 349, sass/partials/_media-queries.scss */
     #home-top .video-intro video {
       display: none; }
 
-  /* line 350, sass/partials/_media-queries.scss */
+  /* line 354, sass/partials/_media-queries.scss */
   .video-intro {
     background: url("media/video/Street-Jam.jpg") no-repeat center center;
     background-size: cover;
     height: 450px; }
 
-  /* line 356, sass/partials/_media-queries.scss */
+  /* line 360, sass/partials/_media-queries.scss */
   .video-title {
     top: 140px;
     height: 350px; }
-    /* line 360, sass/partials/_media-queries.scss */
+    /* line 364, sass/partials/_media-queries.scss */
     .video-title h2 {
       font-size: 1.5em; }
-    /* line 364, sass/partials/_media-queries.scss */
+    /* line 368, sass/partials/_media-queries.scss */
     .video-title h3 {
       font-size: 1.2em; }
 
   /* Common classes for home page widgtes */
-  /* line 374, sass/partials/_media-queries.scss */
+  /* line 378, sass/partials/_media-queries.scss */
   #sponsors .widget-title,
   #newsletter .widget-title,
   #three-columns .widget-title {
     font-size: 2.2em; }
 
   /* Newsletter */
-  /* line 381, sass/partials/_media-queries.scss */
+  /* line 385, sass/partials/_media-queries.scss */
   #newsletter {
     background: #941206; }
-    /* line 385, sass/partials/_media-queries.scss */
+    /* line 389, sass/partials/_media-queries.scss */
     #newsletter .enews #subscribeenews-ext-2 {
       width: 100%; }
-      /* line 388, sass/partials/_media-queries.scss */
+      /* line 392, sass/partials/_media-queries.scss */
       #newsletter .enews #subscribeenews-ext-2 input[type="email"] {
         float: left;
         width: 60%; }
-      /* line 393, sass/partials/_media-queries.scss */
+      /* line 397, sass/partials/_media-queries.scss */
       #newsletter .enews #subscribeenews-ext-2 input[type="submit"] {
         float: right;
         width: 40%; }
-    /* line 400, sass/partials/_media-queries.scss */
+    /* line 404, sass/partials/_media-queries.scss */
     #newsletter #subscribeenews-ext-2,
     #newsletter .enews p:nth-child(2) {
       float: none;
       width: 100%; }
 
   /* 3 Columns */
-  /* line 409, sass/partials/_media-queries.scss */
+  /* line 413, sass/partials/_media-queries.scss */
   #three-columns {
     padding: 0 0 30px; }
-    /* line 412, sass/partials/_media-queries.scss */
+    /* line 416, sass/partials/_media-queries.scss */
     #three-columns .widget {
       margin-bottom: 20px; }
 
   /* Schedule */
-  /* line 419, sass/partials/_media-queries.scss */
+  /* line 423, sass/partials/_media-queries.scss */
   .responsive-table-shortcode-wrap tr td:first-child {
     width: 50%; }
-  /* line 423, sass/partials/_media-queries.scss */
+  /* line 427, sass/partials/_media-queries.scss */
   .responsive-table-shortcode-wrap td, .responsive-table-shortcode-wrap th {
     padding: 6px 6px 6px 114px; } }
 @media only screen and (max-width: 425px) {
-  /* line 432, sass/partials/_media-queries.scss */
+  /* line 436, sass/partials/_media-queries.scss */
   .responsive-table-shortcode-wrap tr td:first-child {
     width: 100%; } }

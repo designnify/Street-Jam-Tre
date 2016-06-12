@@ -94,6 +94,22 @@ function sk_smooth_scroll() {
 //* Enable shortcodes in widgets
 add_filter('widget_text', 'do_shortcode');
 
+//* Remove the entry meta in the entry header
+remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_open', 5 );
+remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_close', 15 );
+
+//* Customize the entry meta in the entry header
+add_filter( 'genesis_post_info', 'bg_entry_meta_header' );
+function bg_entry_meta_header($post_info) {
+	$post_info = '[post_date]';
+	return $post_info;
+}
+
+//* Remove the entry meta in the entry footer
+remove_action( 'genesis_entry_footer', 'genesis_entry_footer_markup_open', 5 );
+remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
+remove_action( 'genesis_entry_footer', 'genesis_entry_footer_markup_close', 15 );
+
 //* Customize the credits
 add_filter( 'genesis_footer_creds_text', 'sp_footer_creds_text' );
 function sp_footer_creds_text() {

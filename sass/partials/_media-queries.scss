@@ -127,11 +127,18 @@
 		padding-left: 5%;
 		padding-right: 5%;
 	}
+	
+	.site-inner {
+		padding-top: 0;
+	}
+	
+	.entry {
+		padding: 0 5%;
+	}
 
 	.archive-description,
 	.author-box,
 	.comment-respond,
-	.entry,
 	.entry-comments,
 	.sidebar .widget,
 	.site-header {
@@ -404,6 +411,26 @@
 		
 		.widget {
 			margin-bottom: 20px;
+		}
+	}
+	
+	/* Schedule */
+	.responsive-table-shortcode-wrap {
+		tr td:first-child {
+			width: 50%;
+		}
+		
+		td, th {
+			padding: 6px 6px 6px 114px;
+		}		
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	
+	.responsive-table-shortcode-wrap {
+		tr td:first-child {
+			width: 100%;
 		}
 	}
 }

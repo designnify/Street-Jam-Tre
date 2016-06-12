@@ -24,7 +24,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 669853,
+		"initialSize": 1.40369e+06,
 		"inputAbbreviatedPath": "\/images\/default-bg.jpg",
 		"outputAbbreviatedPath": "\/images\/default-bg.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -60,6 +60,17 @@
 		"initialSize": 8170,
 		"inputAbbreviatedPath": "\/images\/logo@2x.png",
 		"outputAbbreviatedPath": "\/images\/logo@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/screen.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 669853,
+		"inputAbbreviatedPath": "\/images\/screen.jpg",
+		"outputAbbreviatedPath": "\/images\/screen.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

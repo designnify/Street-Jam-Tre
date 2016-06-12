@@ -1,3 +1,29 @@
+/* Schedule
+--------------------------------------------- */
+.responsive-table-shortcode-wrap {
+	th,
+	tr td:first-child {
+		background: $color-red;
+	}
+	
+	tr td:first-child {
+		color: #fff;
+		width: 30%;
+	}
+	
+	tr:nth-of-type(odd) {
+		background: #fff;
+	}
+	
+	td, th {
+		padding: 0 0 0 10px;
+	}
+	
+	th {
+		border: none;
+	}
+}
+
 /* Contact
 --------------------------------------------- */
 .wpcf7 {

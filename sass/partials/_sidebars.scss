@@ -13,9 +13,33 @@
 	}
 
 	.widget {
-		background-color: #fff;
+		background-color: $color-red;
 		box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
 		margin-bottom: 40px;
-		padding: 40px;
+		padding: 40px 30px;
+	}
+	
+	.featuredpost {
+		.widgettitle {
+			color: #fff;
+			font-size: 30px;
+		}
+		
+		.entry {
+			border-bottom: 1px solid $color-red-dark;
+			padding: 0;
+			
+			.entry-title a:hover {
+				color: #fff;
+			}
+		}
+	}
+	
+	a.more-link {
+		color: #fff;
+		
+		&:hover {
+			color: #000;
+		}
 	}
 }

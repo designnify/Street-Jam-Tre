@@ -36,6 +36,7 @@
 	- Widgets
 		- Featured Content
 	- Pages
+		- Schedule
 		- Contact
 	- Home Widgets
 		- Home Widgets
@@ -45,6 +46,7 @@
 		- Genesis Latest Tweets
 		- Gravity Forms
 		- Jetpack
+		- Genesis Featured Post
 	- Site Header
 		- Title Area
 		- Widget Area
@@ -329,7 +331,7 @@ textarea:focus,
 
 /* line 35, sass/partials/_defaults.scss */
 a {
-  color: #e5554e;
+  color: #941206;
   text-decoration: none; }
 
 /* line 40, sass/partials/_defaults.scss */
@@ -485,7 +487,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-  background-color: #e5554e;
+  background-color: #941206;
   border: 0;
   color: #fff;
   cursor: pointer;
@@ -885,12 +887,32 @@ Widgets
 /*
 Pagess
 ---------------------------------------------------------------------------------------------------- */
+/* Schedule
+--------------------------------------------- */
+/* line 4, sass/partials/_pages.scss */
+.responsive-table-shortcode-wrap th,
+.responsive-table-shortcode-wrap tr td:first-child {
+  background: #941206; }
+/* line 9, sass/partials/_pages.scss */
+.responsive-table-shortcode-wrap tr td:first-child {
+  color: #fff;
+  width: 30%; }
+/* line 14, sass/partials/_pages.scss */
+.responsive-table-shortcode-wrap tr:nth-of-type(odd) {
+  background: #fff; }
+/* line 18, sass/partials/_pages.scss */
+.responsive-table-shortcode-wrap td, .responsive-table-shortcode-wrap th {
+  padding: 0 0 0 10px; }
+/* line 22, sass/partials/_pages.scss */
+.responsive-table-shortcode-wrap th {
+  border: none; }
+
 /* Contact
 --------------------------------------------- */
-/* line 5, sass/partials/_pages.scss */
+/* line 31, sass/partials/_pages.scss */
 .wpcf7 .wpcf7-form p {
   margin: 0 0 12px; }
-/* line 9, sass/partials/_pages.scss */
+/* line 35, sass/partials/_pages.scss */
 .wpcf7 .wpcf7-form input {
   padding: 10px; }
 
@@ -1187,6 +1209,18 @@ Plugins
 /* line 39, sass/partials/_plugins.scss */
 .enews form + p {
   margin-top: 24px; }
+
+/* Genesis Featured Post
+--------------------------------------------- */
+/* Envira Gallery
+--------------------------------------------- */
+/* line 54, sass/partials/_plugins.scss */
+.envira-gallery-wrap img {
+  border: 5px solid #941206; }
+
+/* line 59, sass/partials/_plugins.scss */
+.envirabox-skin {
+  background: #941206 !important; }
 
 /* Gravity Forms
 --------------------------------------------- */
@@ -1597,10 +1631,27 @@ Sidebars
     margin-bottom: 0; }
   /* line 15, sass/partials/_sidebars.scss */
   .sidebar .widget {
-    background-color: #fff;
+    background-color: #941206;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
-    padding: 40px; }
+    padding: 40px 30px; }
+  /* line 23, sass/partials/_sidebars.scss */
+  .sidebar .featuredpost .widgettitle {
+    color: #fff;
+    font-size: 30px; }
+  /* line 28, sass/partials/_sidebars.scss */
+  .sidebar .featuredpost .entry {
+    border-bottom: 1px solid #4e1100;
+    padding: 0; }
+    /* line 32, sass/partials/_sidebars.scss */
+    .sidebar .featuredpost .entry .entry-title a:hover {
+      color: #fff; }
+  /* line 38, sass/partials/_sidebars.scss */
+  .sidebar a.more-link {
+    color: #fff; }
+    /* line 41, sass/partials/_sidebars.scss */
+    .sidebar a.more-link:hover {
+      color: #000; }
 
 /*
 Footer Widgets
@@ -1803,16 +1854,23 @@ Media Queries
     padding-right: 5%; }
 
   /* line 131, sass/partials/_media-queries.scss */
+  .site-inner {
+    padding-top: 0; }
+
+  /* line 135, sass/partials/_media-queries.scss */
+  .entry {
+    padding: 0 5%; }
+
+  /* line 139, sass/partials/_media-queries.scss */
   .archive-description,
   .author-box,
   .comment-respond,
-  .entry,
   .entry-comments,
   .sidebar .widget,
   .site-header {
     padding: 0; }
 
-  /* line 141, sass/partials/_media-queries.scss */
+  /* line 148, sass/partials/_media-queries.scss */
   .archive-description,
   .author-box,
   .comment-respond,
@@ -1822,11 +1880,11 @@ Media Queries
   .sidebar .widget {
     box-shadow: none; }
 
-  /* line 151, sass/partials/_media-queries.scss */
+  /* line 158, sass/partials/_media-queries.scss */
   .archive-pagination li a {
     margin-bottom: 4px; }
 
-  /* line 155, sass/partials/_media-queries.scss */
+  /* line 162, sass/partials/_media-queries.scss */
   .five-sixths,
   .four-sixths,
   .one-fourth,
@@ -1842,35 +1900,35 @@ Media Queries
     margin: 0;
     width: 100%; }
 
-  /* line 171, sass/partials/_media-queries.scss */
+  /* line 178, sass/partials/_media-queries.scss */
   .footer-widgets {
     text-align: center; }
-    /* line 175, sass/partials/_media-queries.scss */
+    /* line 182, sass/partials/_media-queries.scss */
     .footer-widgets .enews input[type="email"] {
       width: 60%; }
-    /* line 179, sass/partials/_media-queries.scss */
+    /* line 186, sass/partials/_media-queries.scss */
     .footer-widgets .enews input[type="submit"] {
       width: 40%; }
 
-  /* line 185, sass/partials/_media-queries.scss */
+  /* line 192, sass/partials/_media-queries.scss */
   .footer-widgets-1,
   .footer-widgets-2 {
     width: 100%; }
 
-  /* line 190, sass/partials/_media-queries.scss */
+  /* line 197, sass/partials/_media-queries.scss */
   .footer-widgets-2 {
     margin-top: 20px; }
-    /* line 192, sass/partials/_media-queries.scss */
+    /* line 199, sass/partials/_media-queries.scss */
     .footer-widgets-2 ul.alignleft {
       display: inline-block;
       float: none; }
 
-  /* line 198, sass/partials/_media-queries.scss */
+  /* line 205, sass/partials/_media-queries.scss */
   .sidebar .widget.enews-widget {
     padding: 40px; }
 
   /* Site Header */
-  /* line 203, sass/partials/_media-queries.scss */
+  /* line 210, sass/partials/_media-queries.scss */
   .site-header,
   .site-header .wrap,
   .title-area,
@@ -1878,17 +1936,17 @@ Media Queries
   .header-image .site-title > a {
     min-height: 60px; }
 
-  /* line 211, sass/partials/_media-queries.scss */
+  /* line 218, sass/partials/_media-queries.scss */
   .header-image .site-title > a {
     background: url(images/mobile-logo.svg) no-repeat left;
     height: 60px; }
 
-  /* line 216, sass/partials/_media-queries.scss */
+  /* line 223, sass/partials/_media-queries.scss */
   .site-header,
   .navigation-container {
     background-color: #941206; }
 
-  /* line 221, sass/partials/_media-queries.scss */
+  /* line 228, sass/partials/_media-queries.scss */
   .title-area,
   .site-title {
     height: 60px;
@@ -1896,49 +1954,49 @@ Media Queries
     position: static;
     width: 120px; }
 
-  /* line 229, sass/partials/_media-queries.scss */
+  /* line 236, sass/partials/_media-queries.scss */
   .site-header .wrap {
     padding: 0 5%; }
 
-  /* line 233, sass/partials/_media-queries.scss */
+  /* line 240, sass/partials/_media-queries.scss */
   .title-area {
     padding: 0; }
 
-  /* line 237, sass/partials/_media-queries.scss */
+  /* line 244, sass/partials/_media-queries.scss */
   .genesis-nav-menu {
     font-size: 18px;
     font-weight: 300; }
-    /* line 241, sass/partials/_media-queries.scss */
+    /* line 248, sass/partials/_media-queries.scss */
     .genesis-nav-menu a {
       padding: 10px 13px; }
 
   /* Responsive Navigation */
-  /* line 248, sass/partials/_media-queries.scss */
+  /* line 255, sass/partials/_media-queries.scss */
   .navigation-container {
     background-color: #941206;
     height: 0;
     top: 0; }
 
-  /* line 254, sass/partials/_media-queries.scss */
+  /* line 261, sass/partials/_media-queries.scss */
   .nav-primary {
     margin-top: 0;
     min-height: 60px;
     width: 100%; }
-    /* line 259, sass/partials/_media-queries.scss */
+    /* line 266, sass/partials/_media-queries.scss */
     .nav-primary .wrap {
       padding: 0; }
 
-  /* line 264, sass/partials/_media-queries.scss */
+  /* line 271, sass/partials/_media-queries.scss */
   .responsive-menu-icon,
   .responsive-menu .menu-item-has-children {
     cursor: pointer; }
 
-  /* line 269, sass/partials/_media-queries.scss */
+  /* line 276, sass/partials/_media-queries.scss */
   .responsive-menu .menu-item {
     display: block;
     text-align: center; }
 
-  /* line 274, sass/partials/_media-queries.scss */
+  /* line 281, sass/partials/_media-queries.scss */
   .responsive-menu-icon {
     display: block;
     float: right;
@@ -1947,12 +2005,12 @@ Media Queries
     text-align: right;
     top: -50px; }
 
-  /* line 283, sass/partials/_media-queries.scss */
+  /* line 290, sass/partials/_media-queries.scss */
   .responsive-menu,
   .responsive-menu > .menu-item > .sub-menu {
     display: none; }
 
-  /* line 288, sass/partials/_media-queries.scss */
+  /* line 295, sass/partials/_media-queries.scss */
   .responsive-menu-icon::before {
     color: #fff;
     content: "\f333";
@@ -1961,7 +2019,7 @@ Media Queries
     margin: 0 auto;
     padding: 10px; }
 
-  /* line 297, sass/partials/_media-queries.scss */
+  /* line 304, sass/partials/_media-queries.scss */
   .responsive-menu > .menu-item-has-children:before {
     clear: both;
     content: "\f347";
@@ -1973,88 +2031,100 @@ Media Queries
     text-align: right;
     z-index: 9999; }
 
-  /* line 309, sass/partials/_media-queries.scss */
+  /* line 316, sass/partials/_media-queries.scss */
   .responsive-menu .menu-open.menu-item-has-children:before {
     content: "\f343"; }
 
-  /* line 313, sass/partials/_media-queries.scss */
+  /* line 320, sass/partials/_media-queries.scss */
   .responsive-menu .sub-menu .sub-menu {
     margin: 0 0 0 25px; }
 
-  /* line 317, sass/partials/_media-queries.scss */
+  /* line 324, sass/partials/_media-queries.scss */
   #menu-left-nav {
     background: #941206;
     position: relative;
     top: -40px; }
 
   /* Home-top */
-  /* line 325, sass/partials/_media-queries.scss */
+  /* line 332, sass/partials/_media-queries.scss */
   #home-top,
   .video-intro {
     position: relative; }
-    /* line 329, sass/partials/_media-queries.scss */
+    /* line 336, sass/partials/_media-queries.scss */
     #home-top h1,
     #home-top h2,
     .video-intro h1,
     .video-intro h2 {
       top: 60%; }
 
-  /* line 335, sass/partials/_media-queries.scss */
+  /* line 342, sass/partials/_media-queries.scss */
   #home-top {
     max-height: 450px; }
-    /* line 338, sass/partials/_media-queries.scss */
+    /* line 345, sass/partials/_media-queries.scss */
     #home-top .video-intro video {
       display: none; }
 
-  /* line 343, sass/partials/_media-queries.scss */
+  /* line 350, sass/partials/_media-queries.scss */
   .video-intro {
     background: url("media/video/Street-Jam.jpg") no-repeat center center;
     background-size: cover;
     height: 450px; }
 
-  /* line 349, sass/partials/_media-queries.scss */
+  /* line 356, sass/partials/_media-queries.scss */
   .video-title {
     top: 140px;
     height: 350px; }
-    /* line 353, sass/partials/_media-queries.scss */
+    /* line 360, sass/partials/_media-queries.scss */
     .video-title h2 {
       font-size: 1.5em; }
-    /* line 357, sass/partials/_media-queries.scss */
+    /* line 364, sass/partials/_media-queries.scss */
     .video-title h3 {
       font-size: 1.2em; }
 
   /* Common classes for home page widgtes */
-  /* line 367, sass/partials/_media-queries.scss */
+  /* line 374, sass/partials/_media-queries.scss */
   #sponsors .widget-title,
   #newsletter .widget-title,
   #three-columns .widget-title {
     font-size: 2.2em; }
 
   /* Newsletter */
-  /* line 374, sass/partials/_media-queries.scss */
+  /* line 381, sass/partials/_media-queries.scss */
   #newsletter {
     background: #941206; }
-    /* line 378, sass/partials/_media-queries.scss */
+    /* line 385, sass/partials/_media-queries.scss */
     #newsletter .enews #subscribeenews-ext-2 {
       width: 100%; }
-      /* line 381, sass/partials/_media-queries.scss */
+      /* line 388, sass/partials/_media-queries.scss */
       #newsletter .enews #subscribeenews-ext-2 input[type="email"] {
         float: left;
         width: 60%; }
-      /* line 386, sass/partials/_media-queries.scss */
+      /* line 393, sass/partials/_media-queries.scss */
       #newsletter .enews #subscribeenews-ext-2 input[type="submit"] {
         float: right;
         width: 40%; }
-    /* line 393, sass/partials/_media-queries.scss */
+    /* line 400, sass/partials/_media-queries.scss */
     #newsletter #subscribeenews-ext-2,
     #newsletter .enews p:nth-child(2) {
       float: none;
       width: 100%; }
 
   /* 3 Columns */
-  /* line 402, sass/partials/_media-queries.scss */
+  /* line 409, sass/partials/_media-queries.scss */
   #three-columns {
     padding: 0 0 30px; }
-    /* line 405, sass/partials/_media-queries.scss */
+    /* line 412, sass/partials/_media-queries.scss */
     #three-columns .widget {
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+
+  /* Schedule */
+  /* line 419, sass/partials/_media-queries.scss */
+  .responsive-table-shortcode-wrap tr td:first-child {
+    width: 50%; }
+  /* line 423, sass/partials/_media-queries.scss */
+  .responsive-table-shortcode-wrap td, .responsive-table-shortcode-wrap th {
+    padding: 6px 6px 6px 114px; } }
+@media only screen and (max-width: 425px) {
+  /* line 432, sass/partials/_media-queries.scss */
+  .responsive-table-shortcode-wrap tr td:first-child {
+    width: 100%; } }

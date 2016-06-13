@@ -28,7 +28,18 @@
 /* News
 --------------------------------------------- */
 
-
+.more-link {
+	color: #fff;
+	background: $color-red;
+	display: table;
+	margin: 10px auto 0;
+	padding: 10px 25px;
+	
+	&:hover {
+		background: #000;
+		color: #fff;
+	}
+}
 
 /* Contact
 --------------------------------------------- */

@@ -78,8 +78,16 @@
 	font-size: 20px;
 }
 
+.page-template-default .entry-title {
+	margin: 0 0 10px;
+	text-align: left;
+}
+
 .entry-title {
 	font-size: 36px;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 .entry-title a,
@@ -88,7 +96,7 @@
 }
 
 .entry-title a:hover {
-	color: #e5554e;
+	color: $color-red;
 }
 
 .widget-title {

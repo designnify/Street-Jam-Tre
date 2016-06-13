@@ -95,8 +95,10 @@ function sk_smooth_scroll() {
 add_filter('widget_text', 'do_shortcode');
 
 //* Remove the entry meta in the entry header
+/*
 remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_open', 5 );
 remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_close', 15 );
+*/
 
 //* Customize the entry meta in the entry header
 add_filter( 'genesis_post_info', 'bg_entry_meta_header' );
@@ -105,10 +107,37 @@ function bg_entry_meta_header($post_info) {
 	return $post_info;
 }
 
+//* Display Featured Image on top of the post
+add_action( 'genesis_before_entry', 'featured_post_image', 8 );
+function featured_post_image() {
+  if ( ! is_singular( 'post' ) )  return;
+	the_post_thumbnail('post-image');
+}
+
 //* Remove the entry meta in the entry footer
 remove_action( 'genesis_entry_footer', 'genesis_entry_footer_markup_open', 5 );
 remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
 remove_action( 'genesis_entry_footer', 'genesis_entry_footer_markup_close', 15 );
+
+//* Modify the length of post excerpts
+add_filter( 'excerpt_length', 'sp_excerpt_length' );
+function sp_excerpt_length( $length ) {
+	return 20; // pull first 50 words
+}
+
+//* Edit the read more link text
+add_filter( 'excerpt_more', 'custom_read_more_link');
+add_filter('get_the_content_more_link', 'custom_read_more_link');
+add_filter('the_content_more_link', 'custom_read_more_link');
+function custom_read_more_link() {
+return '&nbsp;<a class="more-link" href="' . get_permalink() . '" rel="nofollow">Lue lisää &hellip;</a>';
+}
+
+//* Modify the WordPress read more link
+add_filter( 'the_content_more_link', 'sp_read_more_link' );
+function sp_read_more_link() {
+	return '<a class="more-link" href="' . get_permalink() . '">[Continue Reading]</a>';
+}
 
 //* Customize the credits
 add_filter( 'genesis_footer_creds_text', 'sp_footer_creds_text' );

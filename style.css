@@ -1899,6 +1899,10 @@ Media Queries
     padding: 0 5%; }
 
   /* line 139, sass/partials/_media-queries.scss */
+  .sidebar .featuredpost .entry:last-child {
+    border-bottom: none; }
+
+  /* line 143, sass/partials/_media-queries.scss */
   .archive-description,
   .author-box,
   .comment-respond,
@@ -1907,7 +1911,7 @@ Media Queries
   .site-header {
     padding: 0; }
 
-  /* line 148, sass/partials/_media-queries.scss */
+  /* line 152, sass/partials/_media-queries.scss */
   .archive-description,
   .author-box,
   .comment-respond,
@@ -1917,11 +1921,11 @@ Media Queries
   .sidebar .widget {
     box-shadow: none; }
 
-  /* line 158, sass/partials/_media-queries.scss */
+  /* line 162, sass/partials/_media-queries.scss */
   .archive-pagination li a {
     margin-bottom: 4px; }
 
-  /* line 162, sass/partials/_media-queries.scss */
+  /* line 166, sass/partials/_media-queries.scss */
   .five-sixths,
   .four-sixths,
   .one-fourth,
@@ -1937,43 +1941,47 @@ Media Queries
     margin: 0;
     width: 100%; }
 
-  /* line 178, sass/partials/_media-queries.scss */
-  .entry-content {
+  /* line 182, sass/partials/_media-queries.scss */
+  .entry-title {
+    font-size: 30px; }
+
+  /* line 187, sass/partials/_media-queries.scss */
+  .page-template-page_blog .entry-content {
     border-bottom: 1px solid #941206; }
 
-  /* line 182, sass/partials/_media-queries.scss */
+  /* line 192, sass/partials/_media-queries.scss */
   .footer-widgets {
     text-align: center; }
-    /* line 186, sass/partials/_media-queries.scss */
+    /* line 196, sass/partials/_media-queries.scss */
     .footer-widgets .enews input[type="email"] {
       width: 60%; }
-    /* line 190, sass/partials/_media-queries.scss */
+    /* line 200, sass/partials/_media-queries.scss */
     .footer-widgets .enews input[type="submit"] {
       width: 40%; }
 
-  /* line 196, sass/partials/_media-queries.scss */
+  /* line 206, sass/partials/_media-queries.scss */
   .footer-widgets-1,
   .footer-widgets-2 {
     width: 100%; }
 
-  /* line 201, sass/partials/_media-queries.scss */
+  /* line 211, sass/partials/_media-queries.scss */
   .footer-widgets-2 {
     margin-top: 20px; }
-    /* line 203, sass/partials/_media-queries.scss */
+    /* line 213, sass/partials/_media-queries.scss */
     .footer-widgets-2 ul.alignleft {
       display: inline-block;
       float: none; }
 
-  /* line 209, sass/partials/_media-queries.scss */
+  /* line 219, sass/partials/_media-queries.scss */
   .sidebar .widget.enews-widget {
     padding: 40px; }
 
-  /* line 213, sass/partials/_media-queries.scss */
+  /* line 223, sass/partials/_media-queries.scss */
   .sidebar .widget-wrap {
     padding: 5%; }
 
   /* Site Header */
-  /* line 218, sass/partials/_media-queries.scss */
+  /* line 228, sass/partials/_media-queries.scss */
   .site-header,
   .site-header .wrap,
   .title-area,
@@ -1981,17 +1989,17 @@ Media Queries
   .header-image .site-title > a {
     min-height: 60px; }
 
-  /* line 226, sass/partials/_media-queries.scss */
+  /* line 236, sass/partials/_media-queries.scss */
   .header-image .site-title > a {
     background: url(images/mobile-logo.svg) no-repeat left;
     height: 60px; }
 
-  /* line 231, sass/partials/_media-queries.scss */
+  /* line 241, sass/partials/_media-queries.scss */
   .site-header,
   .navigation-container {
     background-color: #941206; }
 
-  /* line 236, sass/partials/_media-queries.scss */
+  /* line 246, sass/partials/_media-queries.scss */
   .title-area,
   .site-title {
     height: 60px;
@@ -1999,49 +2007,49 @@ Media Queries
     position: static;
     width: 120px; }
 
-  /* line 244, sass/partials/_media-queries.scss */
+  /* line 254, sass/partials/_media-queries.scss */
   .site-header .wrap {
     padding: 0 5%; }
 
-  /* line 248, sass/partials/_media-queries.scss */
+  /* line 258, sass/partials/_media-queries.scss */
   .title-area {
     padding: 0; }
 
-  /* line 252, sass/partials/_media-queries.scss */
+  /* line 262, sass/partials/_media-queries.scss */
   .genesis-nav-menu {
     font-size: 18px;
     font-weight: 300; }
-    /* line 256, sass/partials/_media-queries.scss */
+    /* line 266, sass/partials/_media-queries.scss */
     .genesis-nav-menu a {
       padding: 10px 13px; }
 
   /* Responsive Navigation */
-  /* line 263, sass/partials/_media-queries.scss */
+  /* line 273, sass/partials/_media-queries.scss */
   .navigation-container {
     background-color: #941206;
     height: 0;
     top: 0; }
 
-  /* line 269, sass/partials/_media-queries.scss */
+  /* line 279, sass/partials/_media-queries.scss */
   .nav-primary {
     margin-top: 0;
     min-height: 60px;
     width: 100%; }
-    /* line 274, sass/partials/_media-queries.scss */
+    /* line 284, sass/partials/_media-queries.scss */
     .nav-primary .wrap {
       padding: 0; }
 
-  /* line 279, sass/partials/_media-queries.scss */
+  /* line 289, sass/partials/_media-queries.scss */
   .responsive-menu-icon,
   .responsive-menu .menu-item-has-children {
     cursor: pointer; }
 
-  /* line 284, sass/partials/_media-queries.scss */
+  /* line 294, sass/partials/_media-queries.scss */
   .responsive-menu .menu-item {
     display: block;
     text-align: center; }
 
-  /* line 289, sass/partials/_media-queries.scss */
+  /* line 299, sass/partials/_media-queries.scss */
   .responsive-menu-icon {
     display: block;
     float: right;
@@ -2050,12 +2058,12 @@ Media Queries
     text-align: right;
     top: -50px; }
 
-  /* line 298, sass/partials/_media-queries.scss */
+  /* line 308, sass/partials/_media-queries.scss */
   .responsive-menu,
   .responsive-menu > .menu-item > .sub-menu {
     display: none; }
 
-  /* line 303, sass/partials/_media-queries.scss */
+  /* line 313, sass/partials/_media-queries.scss */
   .responsive-menu-icon::before {
     color: #fff;
     content: "\f333";
@@ -2064,7 +2072,7 @@ Media Queries
     margin: 0 auto;
     padding: 10px; }
 
-  /* line 312, sass/partials/_media-queries.scss */
+  /* line 322, sass/partials/_media-queries.scss */
   .responsive-menu > .menu-item-has-children:before {
     clear: both;
     content: "\f347";
@@ -2076,100 +2084,100 @@ Media Queries
     text-align: right;
     z-index: 9999; }
 
-  /* line 324, sass/partials/_media-queries.scss */
+  /* line 334, sass/partials/_media-queries.scss */
   .responsive-menu .menu-open.menu-item-has-children:before {
     content: "\f343"; }
 
-  /* line 328, sass/partials/_media-queries.scss */
+  /* line 338, sass/partials/_media-queries.scss */
   .responsive-menu .sub-menu .sub-menu {
     margin: 0 0 0 25px; }
 
-  /* line 332, sass/partials/_media-queries.scss */
+  /* line 342, sass/partials/_media-queries.scss */
   #menu-left-nav {
     background: #941206;
     position: relative;
     top: -40px; }
 
   /* Home-top */
-  /* line 340, sass/partials/_media-queries.scss */
+  /* line 350, sass/partials/_media-queries.scss */
   #home-top,
   .video-intro {
     position: relative; }
-    /* line 344, sass/partials/_media-queries.scss */
+    /* line 354, sass/partials/_media-queries.scss */
     #home-top h1,
     #home-top h2,
     .video-intro h1,
     .video-intro h2 {
       top: 60%; }
 
-  /* line 350, sass/partials/_media-queries.scss */
+  /* line 360, sass/partials/_media-queries.scss */
   #home-top {
     max-height: 450px; }
-    /* line 353, sass/partials/_media-queries.scss */
+    /* line 363, sass/partials/_media-queries.scss */
     #home-top .video-intro video {
       display: none; }
 
-  /* line 358, sass/partials/_media-queries.scss */
+  /* line 368, sass/partials/_media-queries.scss */
   .video-intro {
     background: url("media/video/Street-Jam.jpg") no-repeat center center;
     background-size: cover;
     height: 450px; }
 
-  /* line 364, sass/partials/_media-queries.scss */
+  /* line 374, sass/partials/_media-queries.scss */
   .video-title {
     top: 140px;
     height: 350px; }
-    /* line 368, sass/partials/_media-queries.scss */
+    /* line 378, sass/partials/_media-queries.scss */
     .video-title h2 {
       font-size: 1.5em; }
-    /* line 372, sass/partials/_media-queries.scss */
+    /* line 382, sass/partials/_media-queries.scss */
     .video-title h3 {
       font-size: 1.2em; }
 
   /* Common classes for home page widgtes */
-  /* line 382, sass/partials/_media-queries.scss */
+  /* line 392, sass/partials/_media-queries.scss */
   #sponsors .widget-title,
   #newsletter .widget-title,
   #three-columns .widget-title {
     font-size: 2.2em; }
 
   /* Newsletter */
-  /* line 389, sass/partials/_media-queries.scss */
+  /* line 399, sass/partials/_media-queries.scss */
   #newsletter {
     background: #941206; }
-    /* line 393, sass/partials/_media-queries.scss */
+    /* line 403, sass/partials/_media-queries.scss */
     #newsletter .enews #subscribeenews-ext-2 {
       width: 100%; }
-      /* line 396, sass/partials/_media-queries.scss */
+      /* line 406, sass/partials/_media-queries.scss */
       #newsletter .enews #subscribeenews-ext-2 input[type="email"] {
         float: left;
         width: 60%; }
-      /* line 401, sass/partials/_media-queries.scss */
+      /* line 411, sass/partials/_media-queries.scss */
       #newsletter .enews #subscribeenews-ext-2 input[type="submit"] {
         float: right;
         width: 40%; }
-    /* line 408, sass/partials/_media-queries.scss */
+    /* line 418, sass/partials/_media-queries.scss */
     #newsletter #subscribeenews-ext-2,
     #newsletter .enews p:nth-child(2) {
       float: none;
       width: 100%; }
 
   /* 3 Columns */
-  /* line 417, sass/partials/_media-queries.scss */
+  /* line 427, sass/partials/_media-queries.scss */
   #three-columns {
     padding: 0 0 30px; }
-    /* line 420, sass/partials/_media-queries.scss */
+    /* line 430, sass/partials/_media-queries.scss */
     #three-columns .widget {
       margin-bottom: 20px; }
 
   /* Schedule */
-  /* line 427, sass/partials/_media-queries.scss */
+  /* line 437, sass/partials/_media-queries.scss */
   .responsive-table-shortcode-wrap tr td:first-child {
     width: 50%; }
-  /* line 431, sass/partials/_media-queries.scss */
+  /* line 441, sass/partials/_media-queries.scss */
   .responsive-table-shortcode-wrap td, .responsive-table-shortcode-wrap th {
     padding: 6px 6px 6px 114px; } }
 @media only screen and (max-width: 425px) {
-  /* line 440, sass/partials/_media-queries.scss */
+  /* line 450, sass/partials/_media-queries.scss */
   .responsive-table-shortcode-wrap tr td:first-child {
     width: 100%; } }

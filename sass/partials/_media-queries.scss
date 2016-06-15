@@ -135,6 +135,10 @@
 	.entry {
 		padding: 0 5%;
 	}
+	
+	.sidebar .featuredpost .entry:last-child {
+		border-bottom: none;
+	}
 
 	.archive-description,
 	.author-box,
@@ -174,9 +178,15 @@
 		margin: 0;
 		width: 100%;
 	}
+
+	.entry-title {
+		font-size: 30px;
+	}
 	
-	.entry-content {
-		border-bottom: 1px solid $color-red;
+	.page-template-page_blog {
+		.entry-content {
+			border-bottom: 1px solid $color-red;
+		}
 	}
 	
 	.footer-widgets {

@@ -204,12 +204,12 @@
 		padding-bottom: 20px;
 	}
 	
-	.widget:first-child,
-	.widget:nth-child(2) {
+	.widget:nth-child(2),
+	.widget:nth-child(3) {
 		background: #fff;
 	}
 	
-	.widget:nth-child(3) .widget-title {
+	.widget:first-child .widget-title {
 		padding-bottom: 0px;
 	}
 	

@@ -1127,11 +1127,11 @@ Home Widgets
     color: #4e1100;
     padding-bottom: 20px; }
   /* line 207, sass/partials/_home-widgets.scss */
-  #three-columns .widget:first-child,
-  #three-columns .widget:nth-child(2) {
+  #three-columns .widget:nth-child(2),
+  #three-columns .widget:nth-child(3) {
     background: #fff; }
   /* line 212, sass/partials/_home-widgets.scss */
-  #three-columns .widget:nth-child(3) .widget-title {
+  #three-columns .widget:first-child .widget-title {
     padding-bottom: 0px; }
   /* line 216, sass/partials/_home-widgets.scss */
   #three-columns .tweets {
